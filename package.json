@@ -1,0 +1,51 @@
+{
+	"name": "constgen-eslint",
+	"version": "0.1.0",
+	"description": "Personal Neutrino preset with ESLint rules",
+	"main": "src/index.js",
+	"scripts": {
+		"eslint": "eslint ./ --ext .js,.md",
+		"pretest": "npm run eslint",
+		"lint": "npm run eslint -- --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/constgen/constgen-eslint.git"
+	},
+	"keywords": [
+		"neutrino",
+		"neutrino-preset",
+		"constgen",
+		"eslint"
+	],
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/constgen/constgen-eslint/issues"
+	},
+	"homepage": "https://github.com/constgen/constgen-eslint#readme",
+	"dependencies": {
+		"@atomspace/eslint": "~4.0.1"
+	},
+	"devDependencies": {
+		"neutrino": "~9.1.0",
+		"eslint": "^6.8.0"
+	},
+	"peerDependencies": {
+		"neutrino": "^9.0.0",
+		"eslint": "^6.8.0"
+	},
+	"engines": {
+		"node": ">=10",
+		"npm": ">=5.4.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		"src",
+		"LICENSE",
+		"README.md",
+		"package.json"
+	]
+}

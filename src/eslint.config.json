@@ -1,0 +1,13 @@
+{
+	"env": {
+		"shared-node-browser": true,
+		"browser": false,
+		"node": false
+	},
+	"rules": {
+		"no-extra-parens": "off",
+		"no-param-reassign": "off",
+		"semi": ["warn", "never"],
+		"eol-last": ["warn", "never"]
+	}
+}
