@@ -4,8 +4,8 @@
 	"description": "Personal Neutrino preset with ESLint rules",
 	"main": "src/index.js",
 	"scripts": {
-		"eslint": "eslint ./ --ext .js,.md",
-		"pretest": "npm run eslint",
+		"eslint": "eslint ./ --ext .js,.md --max-warnings 0",
+		"test": "npm run eslint",
 		"lint": "npm run eslint -- --fix"
 	},
 	"repository": {

@@ -13,17 +13,17 @@ npm install --save-dev neutrino eslint @constgen/eslint
 #### .neutrinorc.js
 
 ```js
-let constgenEslint = require('@constgen/eslint');
+let constgenEslint = require('@constgen/eslint')
 
 module.exports = {
    use: [
       constgenEslint({
-        eslint: {
-          env: { node: true }
-        }
+         eslint: {
+            env: { node: true }
+         }
       })
    ]
-};
+}
 ```
 
 #### package.json
@@ -31,7 +31,7 @@ module.exports = {
 ```json
 {
    "scripts": {
-      "eslint": "eslint ./ --ext .js,.jsx,.html,.md --format codeframe",
+      "eslint": "eslint ./ --ext .js,.jsx,.html,.md --max-warnings 0 --format codeframe",
       "pretest": "npm run eslint",
       "lint": "npm run eslint -- --fix"
    }
@@ -41,9 +41,9 @@ module.exports = {
 #### .eslintrc.js
 
 ```js
-let neutrino = require('neutrino');
+let neutrino = require('neutrino')
 
-module.exports = neutrino().eslintrc();
+module.exports = neutrino().eslintrc()
 ```
 
 #### .vscode/settings.json
