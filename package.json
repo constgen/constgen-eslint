@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/constgen/constgen-eslint#readme",
 	"dependencies": {
-		"@atomspace/eslint": "~4.0.1"
+		"@atomspace/eslint": "~4.1.0"
 	},
 	"devDependencies": {
 		"neutrino": "~9.1.0",
