@@ -1,4 +1,7 @@
 {
+	"plugins": [
+		"align-assignments"
+	],
 	"env": {
 		"shared-node-browser": true,
 		"browser": false,
@@ -8,6 +11,27 @@
 		"no-extra-parens": "off",
 		"no-param-reassign": "off",
 		"semi": ["warn", "never"],
-		"eol-last": ["warn", "never"]
+		"eol-last": ["warn", "never"],
+		"no-multi-spaces": ["warn", {
+			"exceptions": { 
+				"Property": true,
+				"VariableDeclarator": true
+			}
+		}],
+		"key-spacing": ["warn", { 
+			"beforeColon": false, 
+			"afterColon": true,
+			"mode": "strict",
+			"align": "colon" 
+		}],
+		"vue/key-spacing": ["warn", {
+			"beforeColon": false, 
+			"afterColon": true,
+			"mode": "strict",
+			"align": "colon" 
+		}],
+		"align-assignments/align-assignments": ["warn", { 
+			"requiresOnly": false 
+		}]
 	}
 }

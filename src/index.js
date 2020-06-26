@@ -1,5 +1,5 @@
 let atomspaceEslint = require('@atomspace/eslint')
-let mergeConfigs = require('@atomspace/eslint/src/merge-configs')
+let mergeConfigs    = require('@atomspace/eslint/src/merge-configs')
 
 let eslintConfig = require('./eslint.config')
 
