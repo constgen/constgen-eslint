@@ -1,6 +1,7 @@
 {
 	"plugins": [
-		"align-assignments"
+		"align-assignments",
+		"eslint-plugin-no-inferred-method-name"
 	],
 	"env": {
 		"shared-node-browser": true,
@@ -18,6 +19,9 @@
 				"VariableDeclarator": true
 			}
 		}],
+		"init-declarations": ["error", "always", {
+			"ignoreForLoopInit": true 
+		}],
 		"key-spacing": ["warn", { 
 			"beforeColon": false, 
 			"afterColon": true,
@@ -32,6 +36,7 @@
 		}],
 		"align-assignments/align-assignments": ["warn", { 
 			"requiresOnly": false 
-		}]
+		}],
+		"no-inferred-method-name/no-inferred-method-name": "warn"
 	}
 }
