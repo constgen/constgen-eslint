@@ -19,9 +19,7 @@
 				"VariableDeclarator": true
 			}
 		}],
-		"init-declarations": ["error", "always", {
-			"ignoreForLoopInit": true 
-		}],
+		"init-declarations": ["error", "always"],
 		"key-spacing": ["warn", { 
 			"beforeColon": false, 
 			"afterColon": true,
@@ -37,7 +35,6 @@
 		"align-assignments/align-assignments": ["warn", { 
 			"requiresOnly": false 
 		}],
-		"no-inferred-method-name/no-inferred-method-name": "warn",
 		"unicorn/catch-error-name": ["error", {
 			"name": "error",
 			"ignore": [
