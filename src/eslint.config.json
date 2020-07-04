@@ -37,6 +37,78 @@
 		"align-assignments/align-assignments": ["warn", { 
 			"requiresOnly": false 
 		}],
-		"no-inferred-method-name/no-inferred-method-name": "warn"
+		"no-inferred-method-name/no-inferred-method-name": "warn",
+		"unicorn/catch-error-name": ["error", {
+			"name": "error",
+			"ignore": [
+				"^err$",
+				"^\\w+Err$"
+			]
+		}],
+		"unicorn/import-index": ["error", {"ignoreImports": false}],
+		"unicorn/no-for-loop": "error",
+		"unicorn/no-hex-escape": "error",
+		"unicorn/no-keyword-prefix": ["error",{
+			"blacklist": ["new", "class"],
+			"checkProperties": false,
+			"onlyCamelCase": false
+		}],
+		"unicorn/no-null": ["error", {"checkStrictEquality": false}],
+		"unicorn/prevent-abbreviations": ["warn", {
+			"extendDefaultReplacements": true,
+			"replacements": {
+				"arg": {
+					"argument": false
+				},
+				"args": {
+					"arguments": false
+				},
+				"attr": {
+					"attribute": false
+				},
+				"attrs": {
+					"attributes": false
+				},
+				"e": {
+					"error": false
+				},
+				"env": {
+					"environment": false
+				},
+				"err": {
+					"error": false
+				},
+				"param": {
+					"parameter": false
+				},
+				"params": {
+					"parameters": false
+				},
+				"prop": {
+					"property": false
+				},
+				"props": {
+					"properties": false
+				}
+			},
+			"checkVariables": true,
+			"checkProperties": false,
+			"checkFilenames": false
+		}],
+		"unicorn/prefer-starts-ends-with": "off",
+		"sonarjs/prefer-immediate-return": "error",
+		"jest/lowercase-name": ["error", {
+			"ignoreTopLevelDescribe": true
+		}],
+		"@getify/proper-arrows/params": ["error", { 
+			"count": 2,
+			"trivial": false 
+		}],
+		"@getify/proper-arrows/where": ["error", { 
+			"global": true,
+			"property": false,
+			"export": true,
+			"trivial": false
+		}]
 	}
 }

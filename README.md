@@ -31,8 +31,8 @@ module.exports = {
 ```json
 {
    "scripts": {
-      "eslint": "eslint ./ --ext .js,.jsx,.html,.md --format codeframe",
-      "pretest": "npm run eslint -- --max-warnings 0",
+      "eslint": "eslint ./",
+      "pretest": "npm run eslint -- --max-warnings 0 --format codeframe",
       "lint": "npm run eslint -- --fix"
    }
 }
@@ -67,9 +67,11 @@ module.exports = neutrino().eslintrc()
       "editor.insertSpaces": true
    },
    "eslint.options": {
-      "extensions": [".js", ".jsx", ".html", ".md"]
+      "extensions": [".js", ".jsx", ".html", ".md", ".vue"],
+      "resolvePluginsRelativeTo": "./node_modules/.pnpm"
    },
-   "eslint.validate": ["javascript", "javascriptreact", "html", "markdown"]
+   "eslint.validate": ["javascript", "javascriptreact", "html", "markdown", "vue"],
+   "vetur.validation.template": false
 }
 ```
 

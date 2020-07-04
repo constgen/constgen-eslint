@@ -4,8 +4,8 @@
 	"description": "Personal Neutrino preset with ESLint rules",
 	"main": "src/index.js",
 	"scripts": {
-		"eslint": "eslint ./ --ext .js,.md --max-warnings 0",
-		"test": "npm run eslint",
+		"eslint": "eslint ./",
+		"test": "npm run eslint -- --max-warnings 0",
 		"lint": "npm run eslint -- --fix"
 	},
 	"repository": {
@@ -25,17 +25,13 @@
 	},
 	"homepage": "https://github.com/constgen/constgen-eslint#readme",
 	"dependencies": {
-		"@atomspace/eslint": "~4.4.1",
+		"@atomspace/eslint": "~5.0.0",
 		"eslint-plugin-align-assignments": "~1.1.2",
-		"eslint-plugin-no-inferred-method-name": "2.0.0"
+		"eslint-plugin-no-inferred-method-name": "~2.0.0"
 	},
 	"devDependencies": {
 		"neutrino": "~9.2.0",
-		"eslint": "^6.8.0"
-	},
-	"peerDependencies": {
-		"neutrino": "^9.0.0",
-		"eslint": "^6.8.0"
+		"eslint": "^7.4.0"
 	},
 	"engines": {
 		"node": ">=10",
