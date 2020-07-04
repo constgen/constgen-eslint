@@ -32,6 +32,9 @@
 		"neutrino": "~9.2.0",
 		"eslint": "^7.4.0"
 	},
+	"peerDependencies": {
+		"neutrino": "^9.0.0"
+	},
 	"engines": {
 		"node": ">=10",
 		"npm": ">=5.4.0"
