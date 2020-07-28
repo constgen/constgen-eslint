@@ -1,7 +1,6 @@
 {
 	"plugins": [
-		"align-assignments",
-		"eslint-plugin-no-inferred-method-name"
+		"align-assignments"
 	],
 	"env": {
 		"shared-node-browser": true,
