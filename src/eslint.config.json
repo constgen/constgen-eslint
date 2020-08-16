@@ -85,6 +85,12 @@
 				},
 				"props": {
 					"properties": false
+				},
+				"prod": {
+					"production": false
+				},
+				"dev": {
+					"development": false
 				}
 			},
 			"checkVariables": true,
