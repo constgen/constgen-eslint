@@ -44,11 +44,6 @@
 		"unicorn/import-index": ["error", {"ignoreImports": false}],
 		"unicorn/no-for-loop": "error",
 		"unicorn/no-hex-escape": "error",
-		"unicorn/no-keyword-prefix": ["error",{
-			"blacklist": ["new", "class"],
-			"checkProperties": false,
-			"onlyCamelCase": false
-		}],
 		"unicorn/no-null": ["error", {"checkStrictEquality": false}],
 		"unicorn/prevent-abbreviations": ["warn", {
 			"extendDefaultReplacements": true,
