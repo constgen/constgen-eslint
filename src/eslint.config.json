@@ -15,7 +15,10 @@
 		"no-multi-spaces": ["warn", {
 			"exceptions": { 
 				"Property": true,
-				"VariableDeclarator": true
+				"VariableDeclarator": true,
+				"ImportDeclaration": true,
+				"AssignmentExpression": true,
+				"AssignmentPattern": true
 			}
 		}],
 		"init-declarations": ["error", "always"],
