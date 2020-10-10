@@ -90,6 +90,18 @@
 			"checkFilenames": false
 		}],
 		"unicorn/prefer-starts-ends-with": "off",
+		"unicorn/import-style": ["error", {
+			"styles": {
+				"path": { "default": true },
+				"lodash": { "named": true },
+				"utils": { "named": true }
+			},
+			"extendDefaultStyles": false,
+			"checkImport": true,
+			"checkDynamicImport": false,
+			"checkExportFrom": false,
+			"checkRequire": true
+		}],
 		"sonarjs/prefer-immediate-return": "error",
 		"jest/lowercase-name": ["error", {
 			"ignoreTopLevelDescribe": true
@@ -103,6 +115,17 @@
 			"property": false,
 			"export": true,
 			"trivial": false
-		}]
+		}],
+		"react/jsx-handler-names": ["error", {
+			"eventHandlerPrefix": "handle",
+			"eventHandlerPropPrefix": "on",
+			"checkLocalVariables": true,
+			"checkInlineFunction": true
+		}],
+		"react/function-component-definition": ["error", {
+			"namedComponents": "function-declaration",
+			"unnamedComponents": "function-expression"
+		}],
+		"jsdoc/check-line-alignment": ["warn", "always"]
 	}
 }
