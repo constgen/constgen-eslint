@@ -13,11 +13,11 @@ npm install --save-dev neutrino eslint @constgen/eslint
 #### .neutrinorc.js
 
 ```js
-let constgenEslint = require('@constgen/eslint')
+let eslint = require('@constgen/eslint')
 
 module.exports = {
    use: [
-      constgenEslint({
+      eslint({
          eslint: {
             env: { node: true }
          }
@@ -31,9 +31,9 @@ module.exports = {
 ```json
 {
    "scripts": {
-      "eslint": "eslint ./",
+      "eslint" : "eslint ./",
       "pretest": "npm run eslint -- --max-warnings 0 --format codeframe",
-      "lint": "npm run eslint -- --fix"
+      "lint"   : "npm run eslint -- --fix"
    }
 }
 ```
@@ -50,27 +50,27 @@ module.exports = neutrino().eslintrc()
 
 ```json
 {
-   "editor.insertSpaces": false,
+   "editor.insertSpaces"     : false,
    "editor.detectIndentation": false,
-   "jshint.enable": false,
-   "eslint.enable": true,
-   "editor.formatOnSave": false,
+   "jshint.enable"           : false,
+   "eslint.enable"           : true,
+   "editor.formatOnSave"     : false,
    "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
    },
-   "javascript.format.enable": true,
+   "javascript.format.enable"  : true,
    "javascript.validate.enable": false,
-   "files.eol": "\n",
-   "files.insertFinalNewline": false,
-   "[markdown]": {
-      "editor.tabSize": 3,
+   "files.eol"                 : "\n",
+   "files.insertFinalNewline"  : false,
+   "[markdown]"                : {
+      "editor.tabSize"     : 3,
       "editor.insertSpaces": true
    },
    "eslint.options": {
-      "extensions": [".js", ".jsx", ".html", ".md", ".vue"],
+      "extensions"              : [".js", ".jsx", ".html", ".md", ".vue", ".json", ".jsonc", ".json5", ".json6"],
       "resolvePluginsRelativeTo": "./node_modules/.pnpm"
    },
-   "eslint.validate": ["javascript", "javascriptreact", "html", "markdown", "vue"],
+   "eslint.validate"          : ["javascript", "javascriptreact", "html", "markdown", "vue", "json", "jsonc", "json5", "json6"],
    "vetur.validation.template": false
 }
 ```

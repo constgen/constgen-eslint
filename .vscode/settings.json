@@ -2,7 +2,7 @@
    "editor.insertSpaces": false,
    "editor.detectIndentation": false,
    "jshint.enable": false,
-   "eslint.enable": true,
+   "prettier.enable": false,
    "editor.formatOnSave": false,
    "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
@@ -16,8 +16,8 @@
       "editor.insertSpaces": true
    },
    "eslint.options": {
-      "extensions": [".js", ".jsx", ".html", ".md"],
+      "extensions": [".js", ".jsx", ".html", ".md", ".json", ".jsonc", ".json5", ".json6"],
       "resolvePluginsRelativeTo": "./node_modules/.pnpm"
    },
-   "eslint.validate": ["javascript", "javascriptreact", "html", "markdown"]
+   "eslint.validate": ["javascript", "javascriptreact", "html", "markdown", "json", "jsonc", "json5", "json6"]
 }
