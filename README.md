@@ -31,9 +31,10 @@ module.exports = {
 ```json
 {
    "scripts": {
-      "eslint" : "eslint ./",
-      "pretest": "npm run eslint -- --max-warnings 0 --format codeframe",
-      "lint"   : "npm run eslint -- --fix"
+      "eslint"     : "eslint ./",
+      "pretest"    : "npm run eslint -- --max-warnings 0 --format codeframe",
+      "lint"       : "npm run eslint -- --fix",
+      "postinstall": "eslint package.json --fix"
    }
 }
 ```
