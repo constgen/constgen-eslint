@@ -1,16 +1,16 @@
 {
-	"name": "@constgen/eslint",
-	"version": "3.0.0",
+	"name"       : "@constgen/eslint",
+	"version"    : "3.0.0",
 	"description": "Personal Neutrino preset with ESLint rules",
-	"main": "src/index.js",
-	"scripts": {
+	"main"       : "src/index.js",
+	"scripts"    : {
 		"eslint": "eslint ./",
-		"test": "npm run eslint -- --max-warnings 0",
-		"lint": "npm run eslint -- --fix"
+		"test"  : "npm run eslint -- --max-warnings 0",
+		"lint"  : "npm run eslint -- --fix"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/constgen/constgen-eslint.git"
+		"url" : "git+https://github.com/constgen/constgen-eslint.git"
 	},
 	"keywords": [
 		"neutrino",
@@ -18,26 +18,26 @@
 		"constgen",
 		"eslint"
 	],
-	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"author" : "Constantine Genchevsky <const.gen@gmail.com>",
 	"license": "GPL-3.0",
-	"bugs": {
+	"bugs"   : {
 		"url": "https://github.com/constgen/constgen-eslint/issues"
 	},
-	"homepage": "https://github.com/constgen/constgen-eslint#readme",
+	"homepage"    : "https://github.com/constgen/constgen-eslint#readme",
 	"dependencies": {
-		"@atomspace/eslint": "~6.0.0",
+		"@atomspace/eslint"              : "~6.1.1",
 		"eslint-plugin-align-assignments": "~1.1.2"
 	},
 	"devDependencies": {
 		"neutrino": "~9.4.0",
-		"eslint": "^7.16.0"
+		"eslint"  : "^7.16.0"
 	},
 	"peerDependencies": {
 		"neutrino": "^9.0.0"
 	},
 	"engines": {
 		"node": ">=10",
-		"npm": ">=5.4.0"
+		"npm" : ">=5.4.0"
 	},
 	"publishConfig": {
 		"access": "public"
