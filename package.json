@@ -5,7 +5,6 @@
 	"main": "src/index.js",
 	"scripts": {
 		"eslint": "eslint ./",
-		"pretest": "eslint package.json --fix",
 		"test": "npm run eslint -- --max-warnings 0",
 		"lint": "npm run eslint -- --fix"
 	},
@@ -26,7 +25,7 @@
 	},
 	"homepage": "https://github.com/constgen/constgen-eslint#readme",
 	"dependencies": {
-		"@atomspace/eslint": "~6.1.1",
+		"@atomspace/eslint": "~6.2.0",
 		"eslint-plugin-align-assignments": "~1.1.2"
 	},
 	"devDependencies": {

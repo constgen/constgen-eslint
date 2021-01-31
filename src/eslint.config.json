@@ -29,12 +29,6 @@
 			"mode"       : "strict",
 			"align"      : "colon"
 		}],
-		"vue/key-spacing": ["warn", {
-			"beforeColon": false,
-			"afterColon" : true,
-			"mode"       : "strict",
-			"align"      : "colon"
-		}],
 		"align-assignments/align-assignments": ["warn", {
 			"requiresOnly": false
 		}],
