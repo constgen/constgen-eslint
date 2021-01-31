@@ -31,11 +31,10 @@ module.exports = {
 ```json
 {
    "scripts": {
-      "eslint"     : "eslint ./",
-      "pretest"    : "eslint package.json --fix",
-      "test"       : "npm run eslint -- --max-warnings 0",
-      "lint"       : "npm run eslint -- --fix",
-      "postinstall": "eslint package.json --fix"
+      "eslint" : "eslint ./",
+      "pretest": "eslint package.json --fix",
+      "test"   : "npm run eslint -- --max-warnings 0",
+      "lint"   : "npm run eslint -- --fix"
    }
 }
 ```
