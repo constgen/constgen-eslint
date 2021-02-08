@@ -121,6 +121,8 @@
 			"namedComponents"  : "function-declaration",
 			"unnamedComponents": "function-expression"
 		}],
-		"jsdoc/check-line-alignment": ["warn", "always"]
+		"jsdoc/check-line-alignment" : ["warn", "always"],
+		"node/no-unpublished-import" : "error",
+		"node/no-unpublished-require": "error"
 	}
 }

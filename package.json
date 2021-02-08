@@ -26,7 +26,7 @@
 	},
 	"homepage": "https://github.com/constgen/constgen-eslint#readme",
 	"dependencies": {
-		"@atomspace/eslint": "~6.2.0",
+		"@atomspace/eslint": "~6.3.0",
 		"eslint-plugin-align-assignments": "~1.1.2"
 	},
 	"devDependencies": {
